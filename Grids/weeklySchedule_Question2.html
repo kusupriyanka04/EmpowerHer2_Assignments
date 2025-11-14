@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 100%;
+            gap: 10px;
+        }
+        h1{
+            text-align: center;
+        }
+        .schedule{
+            display: grid;
+            grid-row: 1;
+            gap: 10px;
+            grid-template-columns: repeat(6,1fr);
+            gap: 10px;
+        }
+        .schedule>button{
+            width: 150px;
+            height: 30px;
+            border-radius: 10px;
+            border: none;
+        }
+        .blank{
+            visibility: hidden;
+        }
+        .time{
+            background-color: rgb(168, 249, 249);
+            font-weight: bolder;
+        }
+        .day{
+            background-color: aquamarine;
+            font-weight: bolder;
+        }
+        .monday{
+            background-color: rgb(243, 188, 224);
+        }
+        .tuesday{
+            background-color: rgb(236, 248, 131);
+        }
+        .wednesday{
+            background-color: rgb(247, 190, 198);
+        }
+        .thursday{
+            background-color: rgb(180, 174, 244);
+        }
+        .friday{
+            background-color:  rgb(236, 248, 131);
+        }
+        .note{
+            background-color: chartreuse;
+            margin-top: 20px;
+            height: 30px;
+            align-content: center;
+            padding-left: 10px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>✨Weekly Schedule✨</h1>
+    <div class="container">
+        <div class="schedule">
+            <button class="blank"></button>
+            <button class="day">Monday</button>
+            <button class="day">Tuesday</button>
+            <button class="day">Wednesday</button>
+            <button class="day">Thursday</button>
+            <button class="day">Friday</button>
+            <button class="time">08:00</button>
+            <button class="monday"></button>
+            <button class="monday"></button>
+            <button class="monday"></button>
+            <button class="monday"></button>
+            <button class="monday"></button>
+            <button class="time">09:00</button>
+            <button class="tuesday"></button>
+            <button class="tuesday"></button>
+            <button class="tuesday"></button>
+            <button class="tuesday"></button>
+            <button class="tuesday"></button>
+            <button class="time">10:00</button>
+            <button class="wednesday"></button>
+            <button class="wednesday"></button>
+            <button class="wednesday"></button>
+            <button class="wednesday"></button>
+            <button class="wednesday"></button>
+            <button class="time">11:00</button>
+            <button class="thursday"></button>
+            <button class="thursday"></button>
+            <button class="thursday"></button>
+            <button class="thursday"></button>
+            <button class="thursday"></button>
+            <button class="time">12:00</button>
+            <button class="friday"></button>
+            <button class="friday"></button>
+            <button class="friday"></button>
+            <button class="friday"></button>
+            <button class="friday"></button>
+            <button class="time">13:00</button>
+            <button class="monday"></button>
+            <button class="monday"></button>
+            <button class="monday"></button>
+            <button class="monday"></button>
+            <button class="monday"></button>
+            <button class="time">14:00</button>
+            <button class="tuesday"></button>
+            <button class="tuesday"></button>
+            <button class="tuesday"></button>
+            <button class="tuesday"></button>
+            <button class="tuesday"></button>
+            <button class="time">15:00</button>
+            <button class="wednesday"></button>
+            <button class="wednesday"></button>
+            <button class="wednesday"></button>
+            <button class="wednesday"></button>
+            <button class="wednesday"></button>
+            <button class="time">16:00</button>
+            <button class="thursday"></button>
+            <button class="thursday"></button>
+            <button class="thursday"></button>
+            <button class="thursday"></button>
+            <button class="thursday"></button>
+        </div>
+        <div class="note">Note:</div>
+    </div>
+</body>
+</html>
