@@ -103,9 +103,6 @@
             justify-content: space-between;
             padding: 0px 140px 0px 50px;
         }
-        .side-section{
-
-        }
         .app-logo{
             display: flex;
             width: 100px;
@@ -113,9 +110,40 @@
             gap: 30px;
             margin-top: 30px;
         }
+        @media(min-width:0px) and (max-width:768px){
+            .nav{
+                display: none;
+            }
+        }
+        @media(min-width:400px) and (max-width:850px){
+            .top-section{
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media(min-width:0px) and (max-width:399px){
+            .top-section{
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+        @media(min-width:400px) and (max-width:850px){
+            .mid-section{
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media(min-width:0px) and (max-width:399px){
+            .mid-section{
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+        @media(min-width:0px) and (max-width:700px){
+            .bottom-container{
+                flex-direction: column;
+            }
+        }
     </style>
 </head>
 <body>
+    <div class="menu">
     <div class="navbar">
         <h1>Domino's Pizza</h1>
         <div class="nav">
@@ -124,8 +152,8 @@
             <p>GIFT CARD</p>
             <p>CORPORATE ENQUIRY</p>
             <p>CONTACT</p>
-            <button>Download App</button>
         </div>
+        <button>Download App</button>
     </div>
     <h2>Order</h2>
     <div class="top-section">
@@ -253,8 +281,8 @@
                         <img src="https://masai-course.s3.ap-south-1.amazonaws.com/editor/uploads/2022-12-21/Screenshot%202022-12-21%20at%202.47.43%20PM_652243.png" alt="app store">
                     </div>
                 </div>
-                
             </div>
+        </div>
         </div>
 </body>
 </html>
