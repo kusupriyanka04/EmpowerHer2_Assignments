@@ -7,17 +7,23 @@
     <style>
         body{
             font-family: Arial, Helvetica, sans-serif;
+            width: 100%;
+            margin: 0;
         }
         .navbar{
             display: flex;
+            width: 100%;
+            /* height: 100px; */
             align-items: center;
             justify-content: space-between;
+            color: rgb(25, 168, 225);
             box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 
         }
         .nav{
             display: flex;
-            gap: 60px;
+            gap: 100px;
+            /* width: 100%; */
             margin: 0 10px;
         }
         button{
@@ -34,8 +40,8 @@
             gap: 20px;
         }
         .container{
-            width: 350px;
-            height: 300px;
+            height: 300px; 
+            width: 100%;
             border: 1px solid black;
             justify-items: center;
             background-color: red;
@@ -45,12 +51,15 @@
         .container img{
             width: 100px;
             height: 90px;
-            padding-left: 130px;
+            display: flex;
             margin-top: 10px;
         }
         .container button{
             background-color: white;
             color: red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
         .mid-section{
             display: grid;
@@ -59,21 +68,50 @@
             gap: 20px;
         }
         .mid-container{
-            width: 400px;
-            height: 290px;
+            /* width: 400px;
+            height: 290px; */
+            width: 100%;
+            /* padding: 20px; */
+            display: flex;
+            flex-direction: column;
             border: 1px solid black;
             justify-items: center;
-            color: black;
-            /* border: none; */
+            align-items: center;
+            /* color: black; */
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+            border: none;
+        }
+        .mid-container p{
+            text-align: center;
         }
          .mid-container img{
             width: 100px;
             height: 90px;
-            padding-left: 130px;
             margin-top: 10px;
         }
         .last{
             color: red;
+        }
+        .bottom-section{
+            display: flex;
+            width: 100%;
+        }
+        .bottom-container{
+            display: flex;
+            width: 100%;
+            height: 400px;
+            justify-content: space-between;
+            padding: 0px 140px 0px 50px;
+        }
+        .side-section{
+
+        }
+        .app-logo{
+            display: flex;
+            width: 100px;
+            height: 60px;
+            gap: 30px;
+            margin-top: 30px;
         }
     </style>
 </head>
@@ -202,7 +240,21 @@
             <h3>DISCOVER PIZZA</h3>
         </div>
         </div>
-        
     </div>
+    <br><br>
+    <div class="bottom-section">
+            <div class="bottom-container">
+                <img src="https://www.dominos.co.in/assets/new_app_img@2x.png" alt="dominos location image">
+                <div class="side-section">
+                     <h1>Unlock Exclusive Offers</h1>
+                    <p>For lightning fast ordering experience download the<br> Domino's app</p>
+                    <div class="app-logo">
+                        <img src="https://masai-course.s3.ap-south-1.amazonaws.com/editor/uploads/2022-12-21/Screenshot%202022-12-21%20at%202.47.09%20PM_558991.png" alt="googlr play">
+                        <img src="https://masai-course.s3.ap-south-1.amazonaws.com/editor/uploads/2022-12-21/Screenshot%202022-12-21%20at%202.47.43%20PM_652243.png" alt="app store">
+                    </div>
+                </div>
+                
+            </div>
+        </div>
 </body>
 </html>
