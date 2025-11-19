@@ -9,7 +9,7 @@ const grade = marks >= 35 ? "pass" : "fail";
 console.log(grade)
 
 //16(c)
-const greet = (name) => console.log(`Hello ${name || "guest"}
+const greet = (name) => console.log(`Hello, ${name ? name: "guest"}
     `);
     greet("sandya");
     greet();

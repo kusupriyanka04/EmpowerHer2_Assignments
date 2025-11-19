@@ -1,6 +1,6 @@
 // 18(a)
 if (true) {
-  let x = 10;
+  let x = 10; // ReferenceError: x is not defined
   var y = 20;
 }
 console.log(y);

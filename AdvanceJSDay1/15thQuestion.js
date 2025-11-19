@@ -1,7 +1,7 @@
 // 15(a)
 const userName = "Priyanka";
 const course = "JavaScript";
-const msg = `Hello ${userName}, Welcome to the ${course}`
+const msg = `Hello ${userName}, Welcome to the course ${course}`
 console.log(msg)
 console.log(`Hello ${userName}, Welcome to the ${course}`);
 // 15(b)
