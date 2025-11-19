@@ -8,25 +8,7 @@
 
 
 
-const userName = "Priyanka";
-const course = "JavaScript";
-const msg = `Hello ${userName}, Welcome to the ${course}`
-console.log(msg)
-console.log(`Hello ${userName}, Welcome to the ${course}`);
 
-// const name = "Sam";
-// const age = 21;
-// const student = {
-//   name,
-//   age,
-//   greet() {
-//     console.log("Hello");
-//   }
-// };
-// console.log(student);
-
-const getFullName = (first, last)=> `${first} ${last}`;
-console.log(getFullName("kusu", "riya"));
 
 
 const isEven = n => n % 2 === 0;
