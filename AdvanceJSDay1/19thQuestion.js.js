@@ -1,4 +1,4 @@
-
+    
 // 19 question
 // 1st
 console.log(`5 + 7 = ${5 + 7}`);
@@ -105,15 +105,67 @@ const user2 = {
 };
 console.log(user2);
 
-const name = "John";
-const age = 30;
+// const name = "John";
+// const age = 30;
 
+// const user = {
+//   name,
+//   age,
+//   greet() {
+//     console.log(`Hello, I'm ${this.name} and I'm ${this.age} years old.`);
+//   }
+// };
+// user.greet();
+
+// 9th 
+// a) Use a template literal to print today's date using: new Date().toDateString()
+const todayDate = new Date().toDateString();
+console.log(`Today's date is: ${todayDate}`);
+
+// b) Create a template literal that prints: "Hello NAME, your score is SCORE/100"
+const name = "Rahul";
+const score = 85;
+console.log(`Hello ${name}, your score is ${score}/100`);
+
+// 10th 
+const add = (a,b)=>a+b;
+console.log(add(5,8));
+
+const isAdult = age => age => 18;
+
+console.log(isAdult(30));
+
+const double = n => n*n;
+console.log(double(7));
+
+// 11th
+const originalArray = [5, 6, 9, 10, 60];
+const clonedArray = [...originalArray]
+console.log(clonedArray);
+
+const newArray = [100,...originalArray];
+console.log(newArray);
+
+const obj1 = {a: 1, b: 2};
+const obj2 = {b: 20, c: 3};
+const mergedObj = {...obj1, ...obj2 };
+console.log(mergedObj);
+
+// 12th
 const user = {
-  name,
-  age,
-  greet() {
-    console.log(`Hello, I'm ${this.name} and I'm ${this.age} years old.`);
+  name: "Alex",
+  address: {
+    city: "Bangalore"
   }
 };
+console.log(user?.address?.city);
+console.log(user?.job?.title);
 
-user.greet();
+const employee = {
+    emname : "laya",
+    branch : {
+        department :" developer",
+        id : 504
+    } 
+}
+console.log(employee.contact.phone);
