@@ -6,7 +6,7 @@ if (true) {
 console.log(y);
 //console.log(x);
 
-// 18(b)
+// 18
 const Uprofile = {
   user: {
     details: {
@@ -17,12 +17,11 @@ const Uprofile = {
 console.log(Uprofile?.user?.details?.email);
 console.log(Uprofile?.user?.details?.email?.phone);
 
-//18(c)
-const employee = {
-    emname : "laya",
-    branch : {
-        department :" developer",
-        id : 504
-    } 
-}
-console.log(employee.contact.phone);
+// const employee = {
+//     emname : "laya",
+//     branch : {
+//         department :" developer",
+//         id : 504
+//     } 
+// }
+// console.log(employee.contact.phone);
