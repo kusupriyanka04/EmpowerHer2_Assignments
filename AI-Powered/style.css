@@ -1,0 +1,151 @@
+/* COLOR THEME — now lighter per section */
+:root{
+  --bg: #F3F8F9;
+  --section1: #E7F4F5;   /* home */
+  --section2: #E9F2FF;   /* about */
+  --section3: #F9F0FF;   /* skills */
+  --section4: #FFF4EB;   /* contact */
+  --card: #FFFFFF;
+  --text-dark: #123035;
+  --muted: #4E6669;
+  --accent: #FF7D5C;
+  --accent-2: #5CD1E6;
+  --radius: 15px;
+  --container: 1100px;
+  --ease: cubic-bezier(.2,.9,.3,1);
+}
+
+/* BASE */
+*{box-sizing:border-box;}
+body{
+  margin:0;
+  font-family:"Inter",sans-serif;
+  background:var(--bg);
+  color:var(--text-dark);
+  overflow-x:hidden;
+}
+
+.container{width:calc(100% - 40px);max-width:var(--container);margin:auto;}
+
+/* HEADER */
+.site-header{
+  position:sticky;top:0;z-index:20;
+  background:white;
+  border-bottom:1px solid rgba(0,0,0,0.07);
+}
+.logo{font-weight:700;color:var(--accent);letter-spacing:2px;}
+.header-inner{display:flex;align-items:center;justify-content:space-between;padding:14px 0;}
+
+.site-nav{display:flex;gap:18px;align-items:center;}
+.nav-link{text-decoration:none;color:var(--text-dark);font-weight:600;}
+.nav-link.cta{
+  background:linear-gradient(90deg,var(--accent),var(--accent-2));
+  padding:8px 12px;border-radius:8px;color:white;
+}
+
+/* BURGER MENU */
+.nav-toggle{display:none;}
+.nav-toggle-label{display:none;cursor:pointer;}
+.nav-toggle-label span{display:block;background:var(--text-dark);height:3px;margin:6px 0;transition:.3s;}
+
+/* SECTIONS — lighter backgrounds now */
+.section{padding:70px 0;}
+.home{background:var(--section1);}
+.about{background:var(--section2);}
+.skills{background:var(--section3);}
+.contact{background:var(--section4);}
+
+/* HERO */
+.hero-grid{display:grid;grid-template-columns:1fr 380px;gap:36px;align-items:center;}
+.headline{font-size:clamp(1.6rem,3.8vw,2.6rem);color:var(--text-dark);}
+.subhead{max-width:60ch;color:var(--muted);}
+.accent{color:var(--accent);}
+
+.profile-card{
+  background:var(--card);
+  padding:24px;border-radius:var(--radius);
+  display:flex;align-items:center;gap:16px;
+  animation:float 6s infinite ease-in-out;
+  border:1px solid rgba(0,0,0,0.06);
+}
+.profile-initials{
+  width:70px;height:70px;display:grid;place-items:center;
+  border-radius:10px;
+  background:linear-gradient(135deg,var(--accent),var(--accent-2));
+  font-weight:700;color:#fff;font-size:1.4rem;
+}
+
+/* BUTTONS */
+.btn{display:inline-block;text-decoration:none;padding:10px 18px;border-radius:10px;font-weight:600;}
+.btn.primary{background:linear-gradient(90deg,var(--accent),var(--accent-2));color:white;}
+.btn.secondary{color:white;background:var(--accent);}
+
+/* SKILLS */
+.skills-grid{
+  display:grid;gap:20px;grid-template-columns:repeat(3,1fr);margin-top:25px;
+}
+.skill-card{
+  background:white;padding:22px;border-radius:12px;
+  transition:.25s;min-height:130px;
+  border:1px solid rgba(0,0,0,0.08);
+}
+.skill-card:hover{
+  transform:translateY(-8px);
+  box-shadow:0 20px 40px rgba(0,0,0,0.15);
+  background-color: #f2a28e;
+}
+
+/* FOOTER — NEW DESIGN (dark + icons centered + more spacing) */
+.site-footer{
+  background:#468795;
+  padding:40px 0;
+  text-align:center;
+  color:white;
+}
+
+.social-links{
+  display:flex;
+  justify-content:center;
+  gap:32px;   /* more gap between logos */
+  margin-top:34px;
+}
+
+.social img{
+  width:30px;height:30px;
+  opacity:.85;
+  transition:transform .3s var(--ease), filter .3s var(--ease), opacity .3s var(--ease);
+}
+.social:hover img{
+  transform:translateY(-8px) scale(1.22);
+  filter:drop-shadow(0 0 8px var(--accent));
+  opacity:1;
+}
+
+/* RESPONSIVE */
+@media(max-width:1023px){
+  .hero-grid{grid-template-columns:1fr;}
+  .skills-grid{grid-template-columns:repeat(2,1fr);}
+}
+
+@media(max-width:767px){
+  .nav-toggle{display:block;}
+  .nav-toggle-label{display:block;}
+  .site-nav{
+    display:none;
+    position:absolute;
+    top:68px;right:20px;
+    flex-direction:column;
+    background:white;
+    padding:16px;
+    border-radius:12px;
+  }
+  .nav-toggle:checked ~ .site-nav{display:flex;}
+  .skills-grid{grid-template-columns:1fr;}
+}
+
+/* FLOAT ANIMATION */
+@keyframes float{
+  0%{transform:translateY(0)}
+  50%{transform:translateY(-8px)}
+  100%{transform:translateY(0)}
+}
