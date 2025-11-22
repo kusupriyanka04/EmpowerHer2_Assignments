@@ -11,4 +11,4 @@ function processProducts(products) {
 
 const products = [{ name: "Laptop", price: 1000 }, { name: "Mouse", price: 20 }];
 // const names = processProducts(products);
-// console.log(names); 
+// console.log(names);  
